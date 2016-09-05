@@ -33,5 +33,6 @@ To view the signed commits on the Github page, click on `X commits` tab and a st
 ### Keys
 
 PGP public key: https://pgp.mit.edu/pks/lookup?op=vindex&search=0x6AB25603BA8E1E8C
+
 Signify public key: RWQbPYZQpKvFRCNc1yD+rYi73FNMauuIrVeHz5FxyNWUEUtOtf9QWXO6
 
