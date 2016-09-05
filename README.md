@@ -29,3 +29,9 @@ More details on Git Signing and Verification can be found on the official Git we
 https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 
 To view the signed commits on the Github page, click on `X commits` tab and a status will appear next to the commit message.
+  
+### Keys
+
+PGP public key: https://pgp.mit.edu/pks/lookup?op=vindex&search=0x6AB25603BA8E1E8C
+Signify public key: RWQbPYZQpKvFRCNc1yD+rYi73FNMauuIrVeHz5FxyNWUEUtOtf9QWXO6
+
