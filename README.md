@@ -13,7 +13,7 @@ the same.
 
 The forum-posts directory in this repo has a file in `DDMMYYYY` format for each day I make a blog
 entry, and can hold multiple records for each post I make that particular day. These records 
-contain my name (Dirk Praet), folowed by a date/time stamp (in GMT time) corresponding to the
+contain my name (Dirk Praet), followed by a date/time stamp (in GMT time) corresponding to the
 date/time stamp of the actual post on the forum, and optionally, the thread it was posted in (
 for additional clarification).
 
