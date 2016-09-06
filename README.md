@@ -33,13 +33,17 @@ https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 
 #### Signing your posts
 
-1) Generate a PGP keypair if you don't already have one.
+1) Generate a PGP keypair if you don't already have one. Use GnuPG 2 on Linux/xBSD, GPGTools for OS X
+   or GPG4Win on Windows.
 
-2) Create a Git account and a "schneierforumsig" repo in the Github webinterface.
+2) Create a Git account and a "schneierforumsig" repo in the Github webinterface. It will generate
+   a basic README.md automatically.
 
 3) Go to "SSH and PGP keys"-section of your profile's Settings. Add public keys for both if you haven't already done so.
 
-4) Clone the repo to your local hard disk with a git clone https://github.com/your_id/your_repo
+4) Clone the repo to your local hard disk with 'git clone https://github.com/your_id/your_repo'.
+   Alternatively, use a GUI-client. Check https://git-scm.com/downloads/guis for this. I don't like
+   any of them.
 
 5) Edit the README.md to reflect your own thoughts or just copy this one. 
    Add your PGP public key or a key server link to it at the bottom. Optionally, do the same for BSD signify or other key systems.
@@ -53,7 +57,7 @@ https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 
 9) git add and sign-commit the changes you've just made: git commit -a -S -m '(some identifier)'
 
-10) git push to remote Github repository
+10) 'git push' to on-line Github repository (www.github.com)
 
 11) Done. Repeat 9-10 for each new post you wish to sign or do a bulk update whenever you feel like it.
 
