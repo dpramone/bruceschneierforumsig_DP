@@ -34,17 +34,27 @@ https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 #### Signing your posts
 
 1) Generate a PGP keypair if you don't already have one.
+
 2) Create a Git account and a "schneierforumsig" repo in the Github webinterface.
+
 3) Go to "SSH and PGP keys"-section of your profile's Settings. Add public keys for both if you haven't already done so.
+
 4) Clone the repo to your local hard disk with a git clone https://github.com/your_id/your_repo
+
 5) Edit the README.md to reflect your own thoughts or just copy this one. 
    Add your PGP public key or a key server link to it at the bottom. Optionally, do the same for BSD signify or other key systems.
+
 6) Create a "forum-posts" directory within the repo
+
 7) Create an empty file in DDMMYYY name format in that directory when you're going to make a post, e.g. 06092016
+
 8) After you've made a post, add your comments date/time stamp on the forum as a record to current day file. Prefix with your handle,
    optionally append thread name.
+
 9) git add and sign-commit the changes you've just made: git commit -a -S -m '(some identifier)'
+
 10) git push to remote Github repository
+
 11) Done. Repeat 9-10 for each new post you wish to sign or do a bulk update whenever you feel like it.
 
 #### Verifying others posts
