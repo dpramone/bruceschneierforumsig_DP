@@ -21,14 +21,40 @@ Whenever I make a comment I need to establish as originating from myself, an ent
 current day file in forum-posts, the git-commit I then (pgp) sign with
 git commit -a -S -m '(some identifier)'
 
-To verify if indeed a post belongs to me through its pgp signatures, you would essentially
-need to clone this Git repository and compute a signature verification over the Git Commit
-using the command 'git log --show-signature -1'.
+To view the signed commits on the Github page, click on `X commits` tab and a status will appear next to the commit message.
+Alternatively, to verify if indeed a post belongs to me through its pgp signatures, you can
+clone this Git repository and compute a signature verification over the Git Commit using the command
+'git log --show-signature -1'.
 
 More details on Git Signing and Verification can be found on the official Git website linked below:
 https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 
-To view the signed commits on the Github page, click on `X commits` tab and a status will appear next to the commit message.
+###  Step by Step Guide
+
+# Signing your posts
+
+1) Generate a PGP keypair if you don't already have one.
+2) Create a Git account and a "schneierforumsig" repo in the Github webinterface.
+3) Go to "SSH and PGP keys"-section of your profile's Settings. Add public keys for both if you haven't already done so.
+3) Clone the repo to your local hard disk with a git clone https://github.com/your_id/your_repo
+4) Edit the README.md to reflect your own thoughts or just copy this one. 
+Add your PGP public key or a key server link to it at the bottom. Optionally, do the same for BSD signify or other key systems.
+5) Create a "forum-posts" directory within the repo
+6) Create an empty file in DDMMYYY name format in that directory when you're going to make a post, e.g. 06092016
+7) After you've made a post, add your comments date/time stamp on the forum as a record to current day file. Prefix with your handle,
+   optionally append thread name.
+7) git add and sign-commit the changes you've just made: git commit -a -S -m '(some identifier)'
+8) git push to remote Github repository
+9) Done. Repeat 7-8 for each new post you wish to sign or do a bulk update whenever you feel like it.
+
+# Verifying others posts
+
+1) Obtain and sign poster's public key
+2) Go to poster's Git hub commit page of their (Schneier) blog signed posts repository. Check if commits have the "verified" status.
+
+Alternatively:
+2) Clone/Update their "schneierforumsig" repo to hard disk.
+3) Verify pgp signatures for specific posts with 'git log --show-signature -1'.
   
 ### Keys
 
