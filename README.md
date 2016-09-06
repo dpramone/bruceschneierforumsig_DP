@@ -31,7 +31,7 @@ https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 
 ###  Step by Step Guide
 
-# Signing your posts
+#### Signing your posts
 
 1) Generate a PGP keypair if you don't already have one.
 2) Create a Git account and a "schneierforumsig" repo in the Github webinterface.
@@ -47,7 +47,7 @@ Add your PGP public key or a key server link to it at the bottom. Optionally, do
 8) git push to remote Github repository
 9) Done. Repeat 7-8 for each new post you wish to sign or do a bulk update whenever you feel like it.
 
-# Verifying others posts
+#### Verifying others posts
 
 1) Obtain and sign poster's public key
 2) Go to poster's Git hub commit page of their (Schneier) blog signed posts repository. Check if commits have the "verified" status.
